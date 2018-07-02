@@ -18,6 +18,12 @@
         </activity>
         <activity android:name=".MenuPrincipal">
         </activity>
+        <activity android:name=".createParcoursActivity">
+        </activity>
+        <activity android:name=".mesParcoursActivity">
+        </activity>
+        <activity android:name=".parcoursPredefiniActivity">
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
