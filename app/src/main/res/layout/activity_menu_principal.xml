@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradientcolor"
-    tools:context="com.zakin.minutabdo.MainActivity">
+    tools:context="com.zakin.minutabdo.MenuPrincipal">
 
     <TextView
         android:id="@+id/textView"
@@ -45,6 +45,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="260dp"
         android:background="@drawable/menu_button_shape"
+        android:onClick="goToCreate"
         app:layout_constraintEnd_toStartOf="@+id/menu_createParcours"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,6 +60,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/menu_button_shape"
+        android:onClick="goToPredefini"
         app:layout_constraintEnd_toStartOf="@+id/menu_parcourspredefini"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu_button_create_parcours" />
@@ -73,6 +75,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/menu_button_shape"
+        android:onClick="goToMesParcours"
         app:layout_constraintEnd_toStartOf="@+id/menu_mesParcours"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu_button_parcours_predefinis" />
@@ -85,7 +88,8 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:layout_marginTop="80dp"
-        android:text="Mes parcours"
+        android:text="@string/mes_parcours"
+        android:onClick="goToMesParcours"
         app:fontFamily="@font/aldrich"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +103,8 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:layout_marginTop="84dp"
-        android:text="Parcours prédéfinis"
+        android:text="@string/parcours_pr_d_finis"
+        android:onClick="goToPredefini"
         app:fontFamily="@font/aldrich"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu_createParcours" />
@@ -111,7 +116,8 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:layout_marginTop="292dp"
-        android:text="Créer votre parcours"
+        android:text="@string/cr_er_votre_parcours"
+        android:onClick="goToCreate"
         app:fontFamily="@font/aldrich"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
